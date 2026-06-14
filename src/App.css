@@ -3,9 +3,6 @@
   height: 275px;
   padding: 20px;
   margin: 7.5rem auto auto auto;
-  border: 4px solid #000;
-  border-radius: 12px;
-  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
   
   position: relative;
   display: flex;
@@ -20,18 +17,31 @@
   position: relative;
   width: 100%;
   height: 100%;
+  border: 4px solid #000;
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  /* These two styles below are 100% important for the flip mechanic. 
+    Transition measures and smoothens the speed of the transform element, 
+    while the transform style renders the front/back cards in a 3D space.
+  */
   transition: transform 0.8s ease-in-out;
   transform-style: preserve-3d;
+}
+
+.flipped {
+  transform: rotateY(180deg);
 }
 
 .front, .back {
   position: absolute;
   text-align: center;
-  backface-visibility: hidden;
+  backface-visibility: hidden; /* Once styled like a front/back card, this keeps the 
+  back content hidden until it flips */ 
 }
 
 .back {
