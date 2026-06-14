@@ -14,6 +14,13 @@ const cards = [
   {question: "Double ristretto espresso shots + steamed whole milk, and a thin microfoam layer on top", answer: "Flat White"}
 ]
 
+// these will be used to track which cards we already went through
+const visted = new Set()
+
+const generateRandomIndex = () => {
+  return Math.floor(Math.random() * cards.length)
+}
+
 function App() {
 
   let startingPoint = Math.floor(Math.random() * cards.length) // the starting index of the flashcard it'll be randomized to
