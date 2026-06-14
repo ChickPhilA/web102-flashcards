@@ -26,7 +26,7 @@ function App() {
         build of coffee drinks. </h3>
       <h4> Total number of cards: {cards.length} </h4>
 
-      <Flashcard question={cards[currentIndex].question} answer={cards[currentIndex.answer]} />
+      <Flashcard question={cards[currentIndex].question} answer={cards[currentIndex].answer} />
     </div>
   )
 }
