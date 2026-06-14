@@ -7,7 +7,7 @@ const Flashcard = ({question, answer}) => {
 
     return(
         <div className="card" onClick={() => setFlippedToBack(!isFlippedToBack)}>
-            <div className="inner">
+            <div className={`inner ${isFlippedToBack ? "flipped" : ""}`}>
 
                 <div className="front">
                     {question}
