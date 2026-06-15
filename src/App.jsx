@@ -15,15 +15,34 @@ const cards = [
 ]
 
 // these will be used to track which cards we already went through
-const visted = new Set()
+const visited = new Set()
 
 const generateRandomIndex = () => {
-  return Math.floor(Math.random() * cards.length)
+  // Edge case: if the Set is full
+  if(visited.size == cards.length) {
+    visited.clear()
+  }
+
+  let num = Math.floor(Math.random() * cards.length)
+
+  while(true) {
+    if(!visited.has(num)) {
+      visited.add(num)
+      break;
+    }
+    else {
+      num = Math.floor(Math.random() * cards.length)
+    }
+  }
+
+  return num
 }
+
+  let startingPoint = Math.floor(Math.random() * cards.length) // the starting index of the flashcard it'll be randomized to
+  visited.add(startingPoint) // mark the beginning index
 
 function App() {
 
-  let startingPoint = Math.floor(Math.random() * cards.length) // the starting index of the flashcard it'll be randomized to
   const [currentIndex, setCurrentIndex] = useState(startingPoint)
 
   return (
@@ -34,6 +53,8 @@ function App() {
       <h4> Total number of cards: {cards.length} </h4>
 
       <Flashcard question={cards[currentIndex].question} answer={cards[currentIndex].answer} />
+
+      <button onClick={() => setCurrentIndex(generateRandomIndex())}> Next Card </button>
     </div>
   )
 }
