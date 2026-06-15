@@ -24,6 +24,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #dedede;
 
   /* These two styles below are 100% important for the flip mechanic. 
     Transition measures and smoothens the speed of the transform element, 
