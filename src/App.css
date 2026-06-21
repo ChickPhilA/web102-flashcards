@@ -1,3 +1,10 @@
+
+input {
+  display: block;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
 .card {
   width: 400px;
   height: 275px;
