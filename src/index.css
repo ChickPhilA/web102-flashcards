@@ -23,7 +23,6 @@ button {
   border-radius: 8px;
 
   display: block;
-  margin: 1.8rem auto;
   transition: transform 0.1s, background 0.2s;
   cursor: pointer;
 }
@@ -36,4 +35,22 @@ button:hover {
 
 button:active {
   transform: scale(1.05);
+}
+
+#prev {
+  background: red;
+  border: 0px;
+}
+
+#next {
+  background: green;
+  border: 0px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+
+  margin-top: 12px;
 }
