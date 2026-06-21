@@ -1,6 +1,7 @@
 
 input {
   display: block;
+  width: 12%;
   margin: 0 auto;
   margin-top: 3rem;
 }
@@ -54,4 +55,12 @@ input {
 
 .back {
   transform: rotateY(180deg);
+}
+
+.wrong {
+  border: 4px red solid;
+}
+
+.correct {
+  border: 4px green solid;
 }
