@@ -5,7 +5,7 @@ Submitted by: **Phillipe Manio**
 
 This web app: A flashcard studying web application designed to test coffee newcomers, experts, and lovers on the correct build of certain coffee drinks.
 
-Time spent: **4** hours spent in total
+Time spent: **4** hours spent in total (Project 2)
 
 ## Required Features
 
@@ -25,14 +25,17 @@ The following **required** functionality is completed:
   - [X] Clicking on a flipped card again flips it back, showing the front
 - [X] **Clicking on the next button displays a random new card**
 
-The user can submit a guess into an input box before seeing the flipside of a card
-Application features a clearly labeled input box with a submit button where users can type in a guess
-Clicking on the submit button with an incorrect answer shows visual feedback that it is wrong
-Clicking on the submit button with a correct answer shows visual feedback that it is correct
-The user can navigate through an ordered list of cards
-A forward/next button displayed on the card navigates to the next card in a set sequence when clicked
-A previous/back button displayed on the card returns to the previous card in the set sequence when clicked
-Both the next and back buttons should have some visual indication that the user is at the beginning or end of the list (for example, graying out and no longer being available to click), not allowing for wrap-around navigation
+
+Project 3 **required** functionality:
+- [X] **The user can submit a guess into an input box before seeing the flipside of a card**
+  - [X] Application features a clearly labeled input box with a submit button where users can type in a guess
+  - [X] Clicking on the submit button with an incorrect answer shows visual feedback that it is wrong
+  - [X] Clicking on the submit button with a correct answer shows visual feedback that it is correct
+
+- [ ] **The user can navigate through an ordered list of cards**
+  - [ ] A forward/next button displayed on the card navigates to the next card in a set sequence when clicked
+  - [ ] A previous/back button displayed on the card returns to the previous card in the set sequence when clicked
+  - [ ] Both the next and back buttons should have some visual indication that the user is at the beginning or end of the list (for example, graying out and no longer being available to click), not allowing for wrap-around navigation
 
 The following **optional** features are implemented:
 
@@ -49,7 +52,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented required features:
+Here's a walkthrough of implemented required features (Project 2):
 https://youtu.be/2hxEskDQ158
 
 Describe any challenges encountered while building the app.
