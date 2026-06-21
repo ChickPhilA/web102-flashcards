@@ -56,9 +56,12 @@ function App() {
 
       <Flashcard question={cards[currentIndex].question} answer={cards[currentIndex].answer} />
 
-      <input type="input" value="currentGuess"onChange={(e) => setCurrentInput(e.target.value)} />
-      <button> Previous Card </button>
-      <button onClick={() => setCurrentIndex(generateRandomIndex())}> Next Card </button>
+      <div className="buttons">
+        <button id="prev"> Previous Card </button>
+        <button id="next" onClick={() => setCurrentIndex(generateRandomIndex())}> Next Card </button>
+
+        <button> Shuffle Cards </button>
+      </div>
     </div>
   )
 }
