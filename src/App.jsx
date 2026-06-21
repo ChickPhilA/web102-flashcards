@@ -25,9 +25,11 @@ const generateRandomIndex = () => {
 
   let num = Math.floor(Math.random() * cards.length)
 
+  // the while loop continuously searches for a number NOT in the set
   while(true) {
+    // If this randomized index does not exist in the set...
     if(!visited.has(num)) {
-      visited.add(num)
+      visited.add(num) // ...we add it to our set 
       break;
     }
     else {
@@ -54,6 +56,8 @@ function App() {
 
       <Flashcard question={cards[currentIndex].question} answer={cards[currentIndex].answer} />
 
+      <input type="input" value="currentGuess"onChange={(e) => setCurrentInput(e.target.value)} />
+      <button> Previous Card </button>
       <button onClick={() => setCurrentIndex(generateRandomIndex())}> Next Card </button>
     </div>
   )
