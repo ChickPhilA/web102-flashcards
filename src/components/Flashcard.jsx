@@ -1,10 +1,7 @@
 import { useState } from 'react'
 import '../App.css'
 
-const Flashcard = ({question, answer}) => {
-
-    const [isFlippedToBack, setFlippedToBack] = useState(false) // all cards will always start off on the front by default
-    // One thing to fix: when to the next or previous card, always set this to false.
+const Flashcard = ({question, answer, isFlippedToBack, setFlippedToBack}) => {
 
     const [currentInput, setCurrentInput] = useState('')
     const [result, setResult] = useState('')
