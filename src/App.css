@@ -38,7 +38,7 @@ input {
     Transition measures and smoothens the speed of the transform element, 
     while the transform style renders the front/back cards in a 3D space.
   */
-  transition: transform 0.8s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   transform-style: preserve-3d;
 }
 
@@ -63,4 +63,9 @@ input {
 
 .correct {
   border: 4px green solid;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
