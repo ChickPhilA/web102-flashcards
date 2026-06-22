@@ -47,6 +47,11 @@ button:active {
   border: 0px;
 }
 
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 .buttons {
   display: flex;
   justify-content: center;
