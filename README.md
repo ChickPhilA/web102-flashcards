@@ -1,12 +1,12 @@
-# Web Development Project 2 - **Coffee Break Study**
-# Web Development Project 3 - **Coffee Break Study - Extended**
+# Web Development Project 2 & 3: **Coffee Break Study - Extended**
 
 Submitted by: **Phillipe Manio**
 
 This web app: A flashcard studying web application designed to test coffee newcomers, experts, and lovers on the correct build of certain coffee drinks.
 
-Time spent: **4** hours spent in total (Project 2)
-**3** hours spent in total (Project 3)
+Time spent:
+- **4** hours spent in total (Project 2)
+- **3** hours spent in total (Project 3)
 
 ## Required Features
 
